@@ -2,6 +2,10 @@
 require:
   - rubocop-rails
 
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+
 # Dont order gems alphabetically
 Bundler/OrderedGems:
   Enabled: false
@@ -25,3 +29,6 @@ Layout/LineLength:
     - Rakefile
     - 'config/**/*'
     - 'db/**/*'
+    - 'bin/**/*'
+
+

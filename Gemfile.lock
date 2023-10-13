@@ -296,7 +296,6 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.8)
   redis (~> 4.0)
-  rubocop
   rubocop-rails
   selenium-webdriver
   sprockets-rails

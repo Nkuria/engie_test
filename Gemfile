@@ -56,8 +56,6 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'guard'
   gem 'guard-bundler'
-  gem 'rubocop'
-  gem 'rubocop-rails', require: false
 end
 
 group :development do
@@ -76,5 +74,6 @@ group :test do
   gem 'capybara'
   gem 'guard-minitest'
   gem 'guard-rubocop'
+  gem 'rubocop-rails', require: false
   gem 'selenium-webdriver'
 end
