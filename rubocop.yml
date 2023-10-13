@@ -1,0 +1,27 @@
+# .rubocop.yml
+require:
+  - rubocop-rails
+
+# Dont order gems alphabetically
+Bundler/OrderedGems:
+  Enabled: false
+
+# Don't require comment documentation.
+# You code should be self explanatory
+Style/Documentation:
+  Enabled: false
+
+# Don't use Class::Module definition
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/**/*'
+
+# Files excluded from length check
+Layout/LineLength:
+  # Max: 80
+  Exclude:
+    - Gemfile
+    - Guardfile
+    - Rakefile
+    - 'config/**/*'
+    - 'db/**/*'
