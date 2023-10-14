@@ -34,19 +34,19 @@ The general steps include:
  - Include the CustomAttributeable concern any model you want to enable dynamic custom attributes.
  - You can now set and access custom attributes using dynamic methods as if they were regular model attributes. For example:
      ```
-        customer = Customer.create(name: 'John')
+      customer = Customer.create(name: 'John')
 
-        # Set custom attributes
-        customer.favorite_color = 'Blue'
-        customer.hobby = 'Gardening'
+      # Set custom attributes
+      customer.favorite_color = 'Blue'
+      customer.hobby = 'Gardening'
 
-        # custom attributes can be retrieved
-        assert_equal 'Blue', customer.favorite_color
-        assert_equal 'Gardening', customer.hobby
+      # custom attributes can be retrieved
+      customer.favorite_color
+      customer.hobby
      ```
 
 ## Testing:
 A test suite is included to ensure that the solution works as expected
 
 ## Contributions and License:
-  Contributions to this open-source project are welcome. Feel free to open issues or submit pull requests. The application is available under the MIT License.
+  Contributions to this open-source project are welcome. Feel free to open issues or submit pull requests.

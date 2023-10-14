@@ -14,7 +14,7 @@ class CustomAttributeTest < ActiveSupport::TestCase
     assert_equal 'Blue', customer.favorite_color
     assert_equal 'Gardening', customer.hobby
 
-    # Modify and retest custom attributes
+    # Modify custom attributes
     customer.favorite_color = 'Red'
     assert_equal 'Red', customer.favorite_color
 
